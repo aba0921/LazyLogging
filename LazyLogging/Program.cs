@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BenchmarkDotNet.Running;
 
 namespace LazyLogging
 {
@@ -10,6 +11,7 @@ namespace LazyLogging
     {
         static void Main(string[] args)
         {
+            var summary1 = BenchmarkRunner.Run<LazyLoggingTest>();
         }
     }
 }
